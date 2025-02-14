@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects Currently Enrolled</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #111;
+            margin: 0;
+            padding: 0;
+            color: #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            background-color: #134611;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .navigation h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .nav-items {
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #b0d98a; /* Olive Green */
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-items a:hover {
+            color: #e0e0e0;
+        }
+
+        /* Main Section */
+        main {
+            margin-top: 100px;
+            text-align: center;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            color: #a3c76d;
+        }
+
+        /* Boxed Section */
+        .centerDiv {
+            width: 100%;
+            background: #222;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px;
+            color: #c5e99b;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+
+        th {
+            background-color: #134611;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #1c1c1c;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #292929;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: #134611;
+            color: white;
+            width: 100%;
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navigation">
+        <h1>PERSONAL WEB PAGE</h1>
+        <ul class="nav-items">
+            <li><a href="index.html">ABOUT ME</a></li>
+            <li><a href="subjectTaken.html">SUBJECTS TAKEN</a></li>
+            <li><a href="subjectEnrolled.html">CURRENTLY ENROLLED</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+            <li><a href="favorites.html">MY FAVORITES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+    </div>
+    <main>
+      
+
+    <div class="content-container">
+ <h1>Subjects Currently Enrolled</h1>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Subject Name</th>
+                <th>Description</th>
+                <th>Schedule</th>
+                <th>Units</th>
+            </tr>
+            <tr>
+                <td rowspan="2">CSIT 5</td>
+                <td rowspan="2">Computer Science & IT</td>
+                <td>10:05-11:05A TTH</td>
+                <td rowspan="2">3.0</td>
+            </tr>
+            <tr>
+                <td>09:35-11:05A MW</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">ITP 4</td>
+                <td rowspan="2">Introduction to Programming</td>
+                <td>03:05-04:05P MW</td>
+                <td rowspan="2">3.0</td>
+            </tr>
+            <tr>
+                <td>01:00-02:30P MW</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">ITP 5</td>
+                <td rowspan="2">Intermediate Programming</td>
+                <td>11:10-12:10N TTH</td>
+                <td rowspan="2">3.0</td>
+            </tr>
+            <tr>
+                <td>08:00-09:30A TTH</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">ITP 6</td>
+                <td rowspan="2">Advanced Programming</td>
+                <td>01:00-02:30P MW</td>
+                <td rowspan="2">3.0</td>
+            </tr>
+            <tr>
+                <td>02:35-04:05P TTH</td>
+            </tr>
+
+            <tr>
+                <td>STS 1</td>
+                <td>Science, Technology, & Society</td>
+                <td>08:00-11:00A F</td>
+                <td>3.0</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+    <div class="footer">Copyright &#169; 2025 MICHAEL VINCENT PAÑA </div>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #181a1b; /* Dark Gray */
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            background-color: #0b3d02; /* Deep Forest Green */
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .hname h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 32px;
+            color: #fff;
+            margin: 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-items {
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .nav-items li {
+            display: inline;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #b0d98a; /* Olive Green */
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-items a:hover {
+            color: #e0e0e0;
+        }
+
+        /* Profile Section */
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #222524; /* Dark Olive */
+            border-radius: 8px;
+            padding: 40px;
+            max-width: 900px;
+            margin-top: 130px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .mypic img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 4px solid #0b3d02;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .details {
+            flex: 1;
+            padding-left: 30px;
+        }
+
+        .details h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 30px;
+            color: #b0d98a; /* Olive Green */
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .aboutme {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        /* Quote Section */
+        .quote {
+            font-style: italic;
+            font-family: 'Oswald', sans-serif;
+            color: #a4c639;
+            margin-top: 15px;
+            font-size: 18px;
+            text-align: right;
+            letter-spacing: 0.5px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: #0b3d02;
+            color: white;
+            width: 100%;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <div class="hname"><h1>Personal Web Page</h1></div>
+        <ul class="nav-items">
+             <li><a href="index.html">About Me</a></li>
+            <li><a href="subjectTaken.html">Subjects Taken</a></li>
+            <li><a href="subjectEnrolled.html">Currently Enrolled</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="favorites.html">My Favorites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-container">
+        <div class="mypic">
+            <img src="p.jpg" alt="Profile Picture">
+        </div>
+        <div class="details">
+            <h2>Michael Vincent Ebarle Paña</h2>
+
+            <div class="personal-info">
+                <p><strong>Name:</strong> Michael Vincent Ebarle Paña</p>
+                <p><strong>ID Number:</strong> 1100683</p>
+                <p><strong>Age:</strong> 30</p>
+                <p><strong>Birth Date:</strong> January 6, 1995</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Home Address:</strong> Malaubang, Ozamiz City</p>
+            </div>
+
+            <p class="aboutme">
+                I'm a BSIT student who loves the outdoors and technology. I enjoy hiking, swimming, and fishing because I feel adventurous and at ease while I'm in nature. In addition, I love playing video games and taking on new tasks in virtual worlds. I see myself as a kind, industrious, upbeat individual that is constantly willing to learn and develop. I like to travel, experience new foods, and create wonderful memories with my loved ones. I'm constantly searching for new experiences to love and abilities to hone, whether it's coding, gaming, or outdoor adventures!
+ 
+            </p>
+
+
+            <p class="quote">
+                "Our greatest glory is not in never falling, but in rising every time we fall." – Confucius
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">Copyright &#169; 2025 MICHAEL VINCENT PAÑA </div>
+
+</body>
+</html>

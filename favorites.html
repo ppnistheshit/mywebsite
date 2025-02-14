@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #181a1b; /* Dark Gray */
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        .navigation {
+            background-color: #0b3d02; /* Deep Forest Green */
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .hname h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 32px;
+            color: #fff;
+            margin: 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-items {
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-items li {
+            display: inline;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            color: #b0d98a; /* Olive Green */
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-items a:hover {
+            color: #e0e0e0;
+        }
+
+        /* Favorites Section */
+        .fav {
+            margin-top: 130px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 38px;
+            color: #b0d98a;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .lists {
+            background: #222524;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+            width: 60%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .lists ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .lists li {
+            font-size: 18px;
+            padding: 12px 0;
+            border-bottom: 1px solid #444;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lists li:last-child {
+            border-bottom: none;
+        }
+
+        .lists strong {
+            font-family: 'Oswald', sans-serif;
+            font-size: 22px;
+            color: #b0d98a;
+        }
+
+        .lists span {
+            font-style: italic;
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: #0b3d02;
+            color: white;
+            width: 100%;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="hname"><h1>Personal Web Page</h1></div>
+        <ul class="nav-items">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="subjectTaken.html">Subjects Taken</a></li>
+            <li><a href="subjectEnrolled.html">Currently Enrolled</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="favorites.html">My Favorites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+
+    <!-- Favorites Section -->
+    <h1 class="fav">My Favorites</h1>
+    
+    <div class="lists">
+        <ul>
+            <li><strong>Hobby:</strong> <span>Hiking, Fishing and Gaming</span></li>            
+            <li><strong>Music Genre:</strong> <span>Pop, Acoustic, and R&B</span></li>
+            <li><strong>TV Show/Movie:</strong> <span>Romantic Comedies, Horror, and Action Films</span></li>
+            <li><strong>Food:</strong> <span>Fried chicken, Pasta, and Dark Chocolate</span></li>
+            <li><strong>Gadget:</strong> <span>Smartphone, Wireless earbuds, Laptop and PC</span></li>
+            <li><strong>Outdoor Activity:</strong> <span>Beach trips and Nature walks</span></li>
+            <li><strong>Vacation Spot:</strong> <span>Japan and Singapore</span></li>
+            <li><strong>Actor:</strong> <span>Coco Martin and Keanu Reeves</span></li>
+            <li><strong>Actress:</strong> <span>Kathreen Bernardo and Sandra Bullock</span></li>
+            <li><strong>Colors:</strong> <span>Dark Blue, Dark Green, and Black</span></li>
+        </ul>
+    </div>
+
+    <div class="footer">Copyright &#169; MICHAEL VINCENT PAÑA </div>
+
+</body>
+</html>
